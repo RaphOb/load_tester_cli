@@ -27,8 +27,8 @@ Ensure you have the following installed:
 
 ```sh
 # Clone the repository
-git clone https://github.com/your-repo/project.git
-cd project
+git clone git@github.com:RaphOb/load_tester_cli.git
+cd load_test_cli
 
 # Build the project
 # Linux
@@ -100,7 +100,6 @@ env GOOS=darwin GOARCH=amd64 go build -o run-run-mac .
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
 
 ## 👤 Authors
 
