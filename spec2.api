@@ -1,0 +1,40 @@
+
+{
+  "routes": [
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/load/get",
+      "headers": {
+        "Authorization": "Bearer <token>",
+        "Prout": "Prout"
+      },
+      "body": null,
+      "description": "Retrieve a list of users"
+    },
+        {
+      "method": "POST",
+      "url": "http://localhost:8000/load/post",
+      "headers": {
+        "Authorization": "Bearer <token>",
+        "Prout": "Prout"
+      },
+      "body": {
+        "test":"flute"
+      },
+      "description": "Retrieve a list of users"
+    },
+        {
+      "method": "PUT",
+      "url": "http://localhost:8000/load/put",
+      "headers": {
+        "Authorization": "Bearer <token>",
+        "Prout": "Prout"
+      },
+      "body": {
+        "name": "raph",
+        "email": "r@gmail.com"
+      },
+      "description": "Retrieve a list of users"
+    }
+  ]
+}

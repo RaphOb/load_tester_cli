@@ -45,13 +45,14 @@ func (r *Request) fireRequest(wg *sync.WaitGroup, resp *Rapport, ch *chan struct
 	}
 	req, err := http.NewRequest(r.Method, r.Url, bytes.NewBuffer([]byte(body_)))
 	for key, value := range r.Headers {
-		req.Header.Add(key, value)
+		req.Header.Set(key, value)
 	}
 	if err != nil {
 		log.Fatal(err)
 	}
 	resp_, err := client.Do(req)
 	if err != nil {
+		log.Fatal()
 		log.Fatal("Error request")
 	}
 	duration := time.Since(now).Seconds()

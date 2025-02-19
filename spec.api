@@ -3,9 +3,10 @@
   "routes": [
     {
       "method": "GET",
-      "url": "http://127.0.0.1:8001/test/sync_async",
+      "url": "http://localhost:8000/api/image/77821254-48ee-495e-830d-bf6aaec4cc56",
       "headers": {
-        "Authorization": "Bearer <token>"
+        "Authorization": "Bearer <token>",
+        "Prout": "Prout"
       },
       "body": null,
       "description": "Retrieve a list of users"
