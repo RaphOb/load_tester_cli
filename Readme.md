@@ -19,20 +19,28 @@ The goal of this small program is to perform a load test on your APIs. Simply pr
 ## 🏗️ Installation
 
 ### Prerequisites
-Here, you have the choice to use the binary directly, either for Linux (run-run) or Mac(run-run-mac). In this case, there's no need to install Go on your machine, and you can run commands directly with the binary.
-
-If you want to tinker with the code or create a binary for Windows, then these steps are mandatory.
-Ensure you have the following installed:
-
-- [Go](https://golang.org/doc/install) (version 1.18 or higher)
-
-### Steps
-
-```sh
+```
 # Clone the repository
 git clone git@github.com:RaphOb/load_tester_cli.git
 cd load_test_cli
+```
 
+### Using the Precompiled Binaries (Recommended)
+If you just want to use the application, you can directly run the precompiled binary for your platform:
+
+- **Linux**: Use `run-run`
+- **Mac**: Use `run-run-mac`
+
+There's no need to install Go on your machine—just download the binary and start using it!
+
+### Building from Source (For Developers)
+If you want to modify the code or compile a binary for Linux, Mac or Windows, you need to install the following prerequisites:
+
+- [Go](https://golang.org/doc/install) (version 1.18 or higher)
+
+### Steps to Build from Source
+
+```sh
 # Build the project
 # Linux
 env GOOS=linux go build -o run-run .
@@ -40,7 +48,7 @@ env GOOS=linux go build -o run-run .
 env GOOS=darwin GOARCH=amd64 go build -o run-run-mac .
 # Run the project
 ./run-run --help # Linux
-./run-run-mac # mac
+./run-run-mac --help # mac
 ```
 
 ## 📖 Usage
