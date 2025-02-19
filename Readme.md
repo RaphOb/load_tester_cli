@@ -41,8 +41,13 @@ env GOOS=darwin GOARCH=amd64 go build -o run-run-mac .
 ```
 
 ## 📖 Usage
-
-
+### Options
+-c : integer. Max Concurrency.  
+-file: string. File name (path)  
+-freq: string. Allowed freq are ms, s min  
+-rate: int. Number of rate desired  
+-r: int. Number of rate desired  
+### Example
 ```sh
 # Example: Start 10 requests with unlimited concurrency using my file spec2.api
 ./run-run -file spec2.api -r 10
@@ -55,7 +60,10 @@ env GOOS=darwin GOARCH=amd64 go build -o run-run-mac .
 ```
 
 ## 🛠️ Configuration
-###  spec.api exemple
+###  spec.api example
+
+Here is an example with 3 routes, but you can have as many as you want
+```
 {
   "routes": [
     {
@@ -95,6 +103,7 @@ env GOOS=darwin GOARCH=amd64 go build -o run-run-mac .
     }
   ]
 }
+```
 
 ## 📜 License
 

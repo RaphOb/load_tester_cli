@@ -16,7 +16,7 @@ type CmdFlags struct {
 
 func NewCmdFlags() *CmdFlags {
 	cf := CmdFlags{}
-	flag.StringVar(&cf.FileDescriptor, "file", "spec.api", "File name is by default spec.apo. You can overwrite it with the option -file=")
+	flag.StringVar(&cf.FileDescriptor, "file", "spec.api", "File name is by default spec.api. You can overwrite it with the option -file=")
 	flag.IntVar(&cf.RateLimit, "rate", 0, "Number of rate desired, need to be coupled with freq")
 	flag.IntVar(&cf.c, "c", math.MaxInt32, "Max concurrency, if not specified, unlimited")
 
